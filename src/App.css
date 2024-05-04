@@ -4,6 +4,7 @@
   background: url('./assets/home/background-home-mobile.jpg') #000 no-repeat center;
   background-size: cover;
   overflow-x: hidden;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 650px) {

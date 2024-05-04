@@ -1,6 +1,8 @@
 :root {
   /* font-families */
   --ff-barlow: "Barlow Condensed", serif;
+  --ff-bellfair: "Bellefair", serif;
+
 }
 
 * {
@@ -8,9 +10,6 @@
 }
 
 /* Utility classes */
-.flex {
-  display: flex;
-}
 
 .sr-only {
   position: absolute; 
@@ -24,11 +23,17 @@
   border: 0;
 }
 
+.flex {
+  display: flex;
+}
+
 .ff-barlow {
   font-family: var(--ff-barlow);
+  font-family: var(--ff-bellfair);
 }
  
 body {
   margin: 0;
   font-weight: 400;
+  color: #fff;
 }

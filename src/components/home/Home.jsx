@@ -1,0 +1,21 @@
+import './home.css'
+
+function Home() {
+  return (
+    <div className="main flex">
+        <section className="description flex ff-barlow">
+            <h1>SO, YOU WANT TO TRAVEL TO 
+              <br/><br/><span  className="ff-bellefair">SPACE</span></h1>
+            <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
+            outer space and not hover kind of on the edge of it. Well sit back, and relax 
+            because we’ll give you a truly out of this world experience!</p>
+        </section>
+        <button className="explore">
+            Explore
+        </button>
+
+    </div>
+  )
+}
+
+export default Home
