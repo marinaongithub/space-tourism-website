@@ -1,0 +1,132 @@
+.header {
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.nav-list {
+    margin: 0;
+    padding-top: 6rem;
+    list-style-type: none; 
+    letter-spacing: 2.7px; 
+    gap: 1rem;
+    position: fixed;
+    inset: 0 0 0 30%;
+    /* background-color: hsla(0, 0%, 0%, 0.5); */
+    z-index: 1;
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
+    flex-direction: column;
+    /*
+    height: 96px; 
+    list-style-type: none;
+    align-items: center;
+    flex-grow: 1;
+     */
+}
+
+.mobile-nav-toggle {
+    position: absolute;
+    z-index: 2;
+    top: 2rem;
+    right: 1.5rem;
+    border: 0;
+    background-color: transparent;
+    background-image: url("./icon-hamburger.svg");
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    aspect-ratio: 1;
+}
+
+@supports (backdrop-filter: blur(1.5rem)) {
+    .nav-list {
+        background-color: hsla(0, 0%, 100%, 0);
+        backdrop-filter: blur(1.5rem);
+    }
+}
+
+.nav-list span {
+    font-weight: 700;
+}
+
+.visible {
+    transform: translate(0%);
+    display: flex;
+  
+}
+
+.close-icon {
+    background-image: url("./icon-close.svg") !important;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff; 
+}
+
+@media only screen and (min-width: 525px) {
+
+    .mobile-nav-toggle {
+        display: none;
+    }
+    
+    .nav-list {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(0%);
+        height: 6rem;
+        padding-inline: 2.5rem;
+        gap: 2rem;
+        inset: 0 0 auto auto;
+        background-color: hsla(0, 0%, 100%, 0.04);
+    }
+
+    .nav-list span {
+        display: none;
+    }
+
+    .nav-list a:active {
+        cursor: pointer;
+        padding-bottom: 2.25rem;
+        border-bottom: 2px solid #fff;
+    }
+
+}
+
+
+
+/* DESKTOP */
+/* header {
+    align-items: center;
+} */
+
+/* .line {
+    background-color:rgba(151, 151, 151, 4%);
+    width: 473px;
+    height: 1px;
+} */
+
+
+/* .nav-list {
+    padding: 0;
+    margin: 0;  
+    height: 96px; 
+    list-style-type: none;
+    align-items: center;
+    flex-grow: 1;
+    gap: 2rem;
+} */
+
+/* .nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    white-space: nowrap;
+} */
+
+/* .nav-list a:hover {
+    cursor: pointer;
+    padding-bottom: 2.25rem;
+    border-bottom: 2px solid #979797;
+} */
