@@ -15,20 +15,20 @@ function Header() {
         <img src={logo} alt="logo" width="40" height="40"/>
         <div className="line"></div>
         <button className={`mobile-nav-toggle ${isNavVisible ? 'close-icon' : ''}`} onClick={toggleMenu} aria-controls="nav-list">
-            <span className="sr-only" aria-expanded={isNavVisible}>Menu</span></button>
+            <span className="sr-only" aria-expanded={isNavVisible}>Menu</span></button>    
         <nav>
             <ul id="nav-list" className={`nav-list flex ff-barlow ${isNavVisible ? 'visible' : ''}`}>
                 <li>
-                    <a href="#"><span>00</span> HOME</a>
+                    <a href="#"><span>00 &nbsp;</span> HOME</a>
                 </li>
                 <li>
-                    <a href="#"><span>01</span> DESTINATION</a>
+                    <a href="#"><span>01 &nbsp;</span> DESTINATION</a>
                 </li>
                 <li>
-                    <a href="#"><span>02</span> CREW</a>
+                    <a href="#"><span>02 &nbsp;</span> CREW</a>
                 </li>
                 <li>
-                    <a href="#"><span>03</span> TECHNOLOGY</a>
+                    <a href="#"><span>03 &nbsp;</span> TECHNOLOGY</a>
                 </li>
             </ul>
         </nav>
