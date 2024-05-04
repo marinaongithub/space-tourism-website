@@ -1,6 +1,6 @@
 .App {
   /* text-align: center; */
-  min-height: 100vh;
+  min-height: 100dvh;
   background: url('./assets/home/background-home-mobile.jpg') #000 no-repeat center;
   background-size: cover;
   overflow-x: hidden;
