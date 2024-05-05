@@ -15,7 +15,7 @@
 
 .description h1 {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.5rem;
     letter-spacing: 2.7px;
 }
 
@@ -30,7 +30,6 @@
     font-size: 15px;
 }
 
-
 .explore {
     width: 150px;
     aspect-ratio: 1;
@@ -41,4 +40,25 @@
     background-color: #fff;
 }
 
+@media only screen and (min-width: 650px) {
 
+    .main {
+        padding-bottom: 1rem;
+    }
+
+    .description h1 span {
+        font-size: 150px;
+    }
+
+    .description p {
+        margin: 0;
+        font-size: 1rem;
+        padding-inline: 11rem;
+    }
+
+    .explore {
+        width: 242px;
+        aspect-ratio: 1;
+        font-size: 2rem;
+    }
+}
