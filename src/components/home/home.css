@@ -1,10 +1,10 @@
-.main {
+.main {        
+    padding-bottom: 1rem;
     flex-direction: column;
     align-items: center;
     font-weight: 400;
     text-align: center;
     color: #D0D6F9;
-    padding-inline: 2rem;
     flex-grow: 1;
     justify-content: space-around;
 }
@@ -15,7 +15,7 @@
 
 .description h1 {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 2.7px;
 }
 
@@ -28,6 +28,7 @@
 .description p {
     line-height: 25px;
     font-size: 15px;
+    padding-inline: 3.5rem;
 }
 
 .explore {
@@ -43,17 +44,24 @@
 @media only screen and (min-width: 650px) {
 
     .main {
-        padding-bottom: 1rem;
+        padding-bottom: 0rem;
+    }
+
+    .description h1 {
+        font-size: 20px;
+        letter-spacing: 3.38px;
     }
 
     .description h1 span {
         font-size: 150px;
+
     }
 
     .description p {
         margin: 0;
-        font-size: 1rem;
         padding-inline: 11rem;
+        font-size: 1rem;
+        line-height: 28px;
     }
 
     .explore {
@@ -62,3 +70,42 @@
         font-size: 2rem;
     }
 }
+
+@media only screen and (min-width: 1024px) {
+
+    .main {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0 10rem 8rem 10rem;
+        }
+
+    .description {
+        text-align: left;
+        width: 40%;
+    }
+
+    .description h1 {
+        font-size: 28px;
+        letter-spacing: 4.72px;
+    }
+
+    .description p {
+        padding-right: 1rem;
+        padding: 0rem;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 1.5px;
+    }
+
+    .explore {
+        width: 274px;
+        aspect-ratio: 1;
+    }
+}
+
+
+
+
+
+
