@@ -104,7 +104,8 @@
 
     .explore:hover {
         cursor: pointer;
-        outline: hsl(0, 0%, 59%, 0.5) solid 3rem;
+        outline: hsla(214, 41%, 29%, 0.5) solid 3rem;
+        transition: outline 500ms ease-in-out;
     }
 }
 
