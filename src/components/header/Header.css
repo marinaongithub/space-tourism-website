@@ -33,7 +33,7 @@
 
 @supports (backdrop-filter: blur(1.5rem)) {
         .nav-list {
-            background-color: hsla(0, 0%, 0%, 0);
+            background-color: hsla(0, 0%, 0%, 1);
             backdrop-filter: blur(1.5rem);
         }
     }
