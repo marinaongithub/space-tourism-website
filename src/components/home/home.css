@@ -69,7 +69,6 @@
         aspect-ratio: 1;
         font-size: 2rem;
     }
-}
 
 @media only screen and (min-width: 1024px) {
 
@@ -102,6 +101,14 @@
         width: 274px;
         aspect-ratio: 1;
     }
+
+    .explore:hover {
+        cursor: pointer;
+        outline: hsl(0, 0%, 59%, 0.5) solid 3rem;
+    }
+}
+
+    
 }
 
 
