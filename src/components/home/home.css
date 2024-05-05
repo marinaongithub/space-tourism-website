@@ -16,15 +16,18 @@
 .description h1 {
     font-weight: 400;
     font-size: 1rem;
+    letter-spacing: 2.7px;
 }
 
 .description h1 span {
     color: #fff;
     font-size: 5rem;
+    letter-spacing: 0px;
 }
 
 .description p {
     line-height: 25px;
+    font-size: 15px;
 }
 
 .explore {
@@ -32,4 +35,13 @@
     aspect-ratio: 1;
     border: none;
     border-radius: 50%;
+    letter-spacing: 1.25px;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.explore:hover::after {
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.5);
 }

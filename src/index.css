@@ -1,7 +1,7 @@
 :root {
   /* font-families */
   --ff-barlow: "Barlow Condensed", serif;
-  --ff-bellfair: "Bellefair", serif;
+  --ff-bellefair: "Bellefair", serif;
 
 }
 
@@ -29,8 +29,12 @@
 
 .ff-barlow {
   font-family: var(--ff-barlow);
-  font-family: var(--ff-bellfair);
 }
+
+.ff-bellefair {
+  font-family: var(--ff-bellefair);
+}
+
  
 body {
   margin: 0;

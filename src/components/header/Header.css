@@ -16,12 +16,6 @@
     transform: translateX(100%);
     transition: transform 500ms ease-in-out;
     flex-direction: column;
-    /*
-    height: 96px; 
-    list-style-type: none;
-    align-items: center;
-    flex-grow: 1;
-     */
 }
 
 .mobile-nav-toggle {
@@ -39,7 +33,7 @@
 
 @supports (backdrop-filter: blur(1.5rem)) {
         .nav-list {
-            background-color: hsla(0, 0%, 100%, 0);
+            background-color: hsla(0, 0%, 0%, 0);
             backdrop-filter: blur(1.5rem);
         }
     }
