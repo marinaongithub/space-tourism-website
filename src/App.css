@@ -1,21 +1,23 @@
-.App {
-  /* text-align: center; */
+.mainLayout {
+  text-align: center;
+  display: flex;
   min-height: 100dvh;
   background: url('./assets/home/background-home-mobile.jpg') #000 no-repeat center;
   background-size: cover;
   overflow-x: hidden;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 @media only screen and (min-width: 650px) {
-  .App {
+  .mainLayout {
     background: url('./assets/home/background-home-tablet.jpg') #000 no-repeat center;
     background-size: cover;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .App {
+  .mainLayout {
     background: url('./assets/home/background-home-desktop.jpg') #000 no-repeat center;
     background-size: cover;
   }

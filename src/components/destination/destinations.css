@@ -3,7 +3,7 @@
     align-items: center;
     text-align: center;
     color: #D0D6F9;
-    padding: 2rem 2rem 3rem 2rem;
+    padding: 2rem 2rem 2.5rem 2rem;
 }
 
 h2, h3 {
@@ -47,6 +47,7 @@ h2, h3 {
 }
 
 .planetList li {
+    cursor: pointer;
     padding-bottom: 1rem;
 }
 

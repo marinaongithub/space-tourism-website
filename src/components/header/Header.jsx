@@ -19,16 +19,16 @@ function Header() {
         <nav>
             <ul id="nav-list" className={`nav-list flex ff-barlow ${isNavVisible ? 'visible' : ''}`}>
                 <li>
-                    <a href="#"><span>00 &nbsp;</span> HOME</a>
+                    <a href="/"><span>00 &nbsp;</span> HOME</a>
                 </li>
                 <li>
-                    <a href="#"><span>01 &nbsp;</span> DESTINATION</a>
+                    <a href="/destination"><span>01 &nbsp;</span> DESTINATION</a>
                 </li>
                 <li>
-                    <a href="#"><span>02 &nbsp;</span> CREW</a>
+                    <a href="/crew"><span>02 &nbsp;</span> CREW</a>
                 </li>
                 <li>
-                    <a href="#"><span>03 &nbsp;</span> TECHNOLOGY</a>
+                    <a href="technology"><span>03 &nbsp;</span> TECHNOLOGY</a>
                 </li>
             </ul>
         </nav>
