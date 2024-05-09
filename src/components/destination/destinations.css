@@ -74,6 +74,7 @@ h2, h3 {
 
 .metrics {
     flex-direction: column;
+    white-space: nowrap;
 }
 
 .break {
@@ -134,6 +135,49 @@ h2, h3 {
         gap: 6rem;
     }
 
+    @media only screen and (min-width: 1270px) {
+
+        .destination {
+            flex-direction: row;
+            padding-inline: 8rem;
+            margin-top: 2rem;
+            gap: 8rem;
+            text-align: left;
+        }
+
+        .planet h2 {
+            font-size: 2rem;
+            letter-spacing: 4.72px;
+        }
+
+        .planetImg {
+            width: 445px;
+            height: 445px;
+            margin-right: 1rem;
+            margin-top: 6rem;
+        }
+
+        .details h3 {
+            font-size: 6.25rem;
+        }
+
+        .details {
+            align-items: flex-start;
+        }
+
+        .planetInfo {
+            padding-inline: 0;
+            font-size: 18px;
+            line-height: 32px;
+        }
+
+        .metrics {
+            padding-top: 0;
+            gap: 5rem;
+        }
+    
+
+    }
 
 
 }

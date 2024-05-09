@@ -21,8 +21,7 @@ const Destinations = () => {
           </ul>  
         </nav>
         <h3 className="ff-bellefair">MOON</h3>
-        <p className="planetInfo">
-          See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+        <p className="planetInfo">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
           regain perspective and come back refreshed. While you’re there, take in some history 
           by visiting the Luna 2 and Apollo 11 landing sites.
         </p>
