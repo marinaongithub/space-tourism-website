@@ -1,4 +1,4 @@
-import '../App.css'
+import '../mainLayout.css'
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from '../components/header/Header';

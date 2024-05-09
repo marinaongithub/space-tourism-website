@@ -55,7 +55,6 @@
 
     .description h1 span {
         font-size: 150px;
-
     }
 
     .description p {
@@ -70,6 +69,7 @@
         aspect-ratio: 1;
         font-size: 2rem;
     }
+}
 
 @media only screen and (min-width: 1024px) {
 
@@ -78,7 +78,7 @@
         align-items: flex-end;
         justify-content: space-between;
         padding: 0 10rem 8rem 10rem;
-        }
+    }
 
     .description {
         text-align: left;
@@ -110,8 +110,6 @@
     }
 }
 
-    
-}
 
 
 

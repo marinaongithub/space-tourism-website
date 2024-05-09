@@ -12,6 +12,7 @@ h2, h3 {
 
 .planet {
     flex-direction: column;
+    width: 100%;
 }
 
 .planet h2 {
@@ -93,4 +94,46 @@ h2, h3 {
     margin: 0;
     color: #fff;
     font-size: 1.75rem;
+}
+
+@media only screen and (min-width: 650px) {
+    
+    .planet h2 {
+        align-self: flex-start;
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+
+    .planetImg {
+        width: 270px;
+        height: 270px;
+        margin-block: 2rem;
+    }
+
+    .planetList {
+        font-size: 1rem;
+        letter-spacing: 2.7px;
+        gap: 2rem;
+    }
+
+    .details h3 {
+        font-size: 5rem;
+    }
+
+    .planetInfo {
+        line-height: 28px;
+        padding-inline: 4rem;
+        letter-spacing: 1.4px;
+        padding-bottom: 3rem;
+    }
+
+    .metrics {
+        padding-top: 3rem;
+        flex-direction: row;
+        justify-content: center;
+        gap: 6rem;
+    }
+
+
+
 }
