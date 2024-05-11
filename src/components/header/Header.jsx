@@ -1,9 +1,10 @@
 import './Header.css';
-import logo from '../../assets/shared/logo.svg'
+import logo from '../../assets/shared/logo.svg';
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
-    
+
     const [isNavVisible, setNavVisible] = useState(false);
 
     const toggleMenu = () => {
@@ -19,21 +20,22 @@ function Header() {
         <nav>
             <ul id="nav-list" className={`nav-list flex ff-barlow ${isNavVisible ? 'visible' : ''}`}>
                 <li>
-                    <a href="/"><span>00 &nbsp;</span> HOME</a>
+                    <NavLink exact id="home" to="/" end ><span>00 &nbsp;</span> HOME</NavLink>
                 </li>
                 <li>
-                    <a href="/destination"><span>01 &nbsp;</span> DESTINATION</a>
+                    <NavLink exact id="destination" to="/destination" ><span>01 &nbsp;</span> DESTINATION</NavLink>
                 </li>
                 <li>
-                    <a href="/crew"><span>02 &nbsp;</span> CREW</a>
+                    <NavLink exact id="crew" to="/crew" ><span>02 &nbsp;</span> CREW</NavLink>
                 </li>
                 <li>
-                    <a href="technology"><span>03 &nbsp;</span> TECHNOLOGY</a>
+                    <NavLink exact id="technology" to="/technology" ><span>03 &nbsp;</span> TECHNOLOGY</NavLink>
                 </li>
             </ul>
         </nav>
       </header>
     );
-  }
+}
+
 
   export default Header;
