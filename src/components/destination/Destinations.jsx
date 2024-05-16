@@ -1,43 +1,67 @@
 import React from 'react'
 import './destinations.css'
-import planet from '../../assets/destination/image-moon.webp';
+import jsonData from '../../../data.json'
+import { useState } from 'react';
 
 const Destinations = () => {
+
+  const planetsData = jsonData.destinations;
+  console.log(planetsData);
+  const initialPlanet = planetsData[0];
+  console.log(initialPlanet)
+
+  const [planetSelected, setPlanetSelected] = useState(initialPlanet);
+  console.log(planetSelected);
+
+  const changePlanet = (event) => {
+    event.preventDefault();
+    const buttonClicked = event.currentTarget.id; // get the id of the button clicked which correspond to the index in the json data
+    console.log(Number(buttonClicked));
+    setPlanetSelected(planetsData[Number(buttonClicked)]); // convert the id into a number and get the corresponding planet Data
+    console.log(planetSelected.images.webp);
+  }
+
   return (
     <div className="destination flex ff-barlow">
       <section className="planet flex">
         <h2><span>01&nbsp;&nbsp;&nbsp;</span>PICK YOUR DESTINATION</h2>
         <figure>
-          <img className="planetImg" src={planet} alt="the moon" width="445" height="445" ></img>
+          <img className="planetImg" src={planetSelected.images.webp} alt={planetSelected.name} width="445" height="445" ></img>
         </figure> 
       </section>   
       <section className="details flex">
         <nav>
           <ul className="planetList flex">
-            <li>MOON</li>
-            <li>MARS</li>
-            <li>EUROPA</li>
-            <li>TITAN</li>
+            <li>
+              <button id="0" onClick={changePlanet}>{planetsData[0].name}</button>
+            </li>
+            <li>
+              <button id="1" onClick={changePlanet}>{planetsData[1].name}</button>
+            </li>
+            <li>
+              <button id="2" onClick={changePlanet}>{planetsData[2].name}</button>
+            </li>
+            <li>
+              <button id="3" onClick={changePlanet}>{planetsData[3].name}</button>
+            </li>
           </ul>  
         </nav>
-        <h3 className="ff-bellefair">MOON</h3>
-        <p className="planetInfo">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-          regain perspective and come back refreshed. While you’re there, take in some history 
-          by visiting the Luna 2 and Apollo 11 landing sites.
+        <h3 className="ff-bellefair">{planetSelected.name}</h3>
+        <p className="planetInfo">{planetSelected.description}
         </p>
         {/* <div className="break"></div> */}
         <div className="metrics flex">
           <div>
             <h4 >AVG. DISTANCE</h4>
-            <p className="ff-bellefair">384,400 KM</p>
+            <p className="ff-bellefair">{planetSelected.distance}</p>
           </div>
           <div>
             <h4 >EST. TRAVEL TIME</h4>
-            <p className="ff-bellefair">3 DAYS</p>
+            <p className="ff-bellefair">{planetSelected.travel}</p>
           </div>
         </div>
       </section>
-    </div>    
+    </div> 
   )
 }
 

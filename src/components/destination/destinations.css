@@ -12,7 +12,6 @@ h2, h3 {
 
 .planet {
     flex-direction: column;
-    width: 100%;
 }
 
 .planet h2 {
@@ -56,7 +55,14 @@ h2, h3 {
 .planetList li:active {
     padding-bottom: calc(1rem - 2.5px);
     border-bottom: 2.5px solid #fff;
-    color: #fff;
+}
+
+.planetList button {
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+    padding: 0;
 }
 
 .details h3 {
@@ -139,13 +145,12 @@ h2, h3 {
 
         .destination {
             flex-direction: row;
-            padding-inline: 8rem;
             margin-top: 2rem;
-            gap: 8rem;
             text-align: left;
         }
 
         .planet h2 {
+            padding-left: 6.5rem;
             font-size: 2rem;
             letter-spacing: 4.72px;
         }
@@ -153,8 +158,7 @@ h2, h3 {
         .planetImg {
             width: 445px;
             height: 445px;
-            margin-right: 1rem;
-            margin-top: 6rem;
+            margin: 6rem 0 3rem 3rem;
         }
 
         .details h3 {
@@ -163,10 +167,12 @@ h2, h3 {
 
         .details {
             align-items: flex-start;
+            width: 444px;
+            margin-left: 8rem;
         }
 
         .planetInfo {
-            padding-inline: 0;
+            padding-inline: 0 6px;
             font-size: 18px;
             line-height: 32px;
         }
@@ -175,9 +181,5 @@ h2, h3 {
             padding-top: 0;
             gap: 5rem;
         }
-    
-
     }
-
-
 }
