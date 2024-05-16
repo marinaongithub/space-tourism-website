@@ -47,7 +47,6 @@ h2, h3 {
 }
 
 .planetList li {
-    cursor: pointer;
     padding-bottom: 1rem;
 }
 
@@ -58,6 +57,7 @@ h2, h3 {
 }
 
 .planetList button {
+    cursor: pointer;
     background: none;
     border: none;
     font: inherit;
