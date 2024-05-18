@@ -24,31 +24,32 @@ const Crew = () => {
 
 
   return (
-    <div className="crew flex ff-barlow">
+    <div className="crewPage flex ff-barlow">
         <h2><span>02&nbsp;&nbsp;&nbsp;</span>MEET YOUR CREW</h2>
-        <picture>
-            <img className="crewImg" src={crewMemberSelected.images.webp} alt="Crew member" width="327" height="223"/>
-        </picture>
-        <ul className="crewList flex">
-            <li>
-                <button id="0" className="selected" onClick={changeCrewData}></button>
-            </li>
-            <li>
-                <button id="1" onClick={changeCrewData}></button>
-            </li>
-            <li>
-                <button id="2" onClick={changeCrewData}></button>
-            </li>
-            <li>
-                <button id="3" onClick={changeCrewData}></button>
-            </li>
-        </ul>
-        <section>
-            <p className="role bellefair">{crewMemberSelected.role}</p>
-            <p className="crewName bellefair">{crewMemberSelected.name}</p>
-            <p className="bio">{crewMemberSelected.bio}</p>
-        </section>
-      
+        <main className="crew flex">
+            <picture>
+                <img className="crewImg" src={crewMemberSelected.images.webp} alt="Crew member" width="327" height="223"/>
+            </picture>
+            <ul className="crewList flex">
+                <li>
+                    <button id="0" className="selected" onClick={changeCrewData}></button>
+                </li>
+                <li>
+                    <button id="1" onClick={changeCrewData}></button>
+                </li>
+                <li>
+                    <button id="2" onClick={changeCrewData}></button>
+                </li>
+                <li>
+                    <button id="3" onClick={changeCrewData}></button>
+                </li>
+            </ul>
+            <section>
+                <p className="role bellefair">{crewMemberSelected.role}</p>
+                <p className="crewName bellefair">{crewMemberSelected.name}</p>
+                <p className="bio">{crewMemberSelected.bio}</p>
+            </section>
+        </main>
     </div>
   )
 }

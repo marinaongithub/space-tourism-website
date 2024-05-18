@@ -1,17 +1,23 @@
-.crew {
+.crewPage {
     flex-direction: column;
-    align-items: center;
-    padding-inline: 2rem;
+    flex-grow: 1;
 }
 
-.crew h2 {
+.crew {
+    flex-direction: column;
+    padding-inline: 2rem;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.crewPage h2 {
     letter-spacing: 2.7px;
     font-size: 1rem;
     font-weight: 400;
     margin-block: 1.5rem;
 }
 
-.crew h2 span {
+.crewPage h2 span {
     font-weight: bold;
     color: hsl(0, 0%, 33%);
 }
@@ -58,4 +64,48 @@
     padding: 0;
     justify-content: center;
     gap: 1rem;
+}
+
+@media only screen and (min-width: 650px) {
+
+    .crewPage h2 {
+        text-align: left;
+        letter-spacing: 3.38px;
+        font-size: 1.25rem;
+        padding-inline: 2rem;
+        margin-block: 2rem;
+    }
+
+    .crew {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-inline: 11.25rem;
+    }
+
+    .role {
+        font-size: 1.5rem;
+    }
+
+    .crewName {
+        font-size: 2.5rem;
+    }
+
+    .bio {
+        line-height: 28px;
+        margin-top: 1.5rem;
+    }
+
+    .crewImg {
+        width: 457px;
+        height: 533px;
+    }
+
+    .crew button {
+        margin-bottom: 2rem;
+    }
+
+    .main {
+        padding-inline: 2rem;
+    }
+
 }
