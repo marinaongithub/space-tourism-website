@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3351f0c2.chunk.css",
+    "main.js": "/static/js/main.51cae5d9.chunk.js",
+    "main.js.map": "/static/js/main.51cae5d9.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.891e0007.js",
+    "runtime~main.js.map": "/static/js/runtime~main.891e0007.js.map",
+    "static/js/2.a71b1702.chunk.js": "/static/js/2.a71b1702.chunk.js",
+    "static/js/2.a71b1702.chunk.js.map": "/static/js/2.a71b1702.chunk.js.map",
+    "static/js/3.ba8b7f13.chunk.js": "/static/js/3.ba8b7f13.chunk.js",
+    "static/js/3.ba8b7f13.chunk.js.map": "/static/js/3.ba8b7f13.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b24e068e73dc0f00be98e8e1a4bf921d.js": "/precache-manifest.b24e068e73dc0f00be98e8e1a4bf921d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.3351f0c2.chunk.css.map": "/static/css/main.3351f0c2.chunk.css.map",
+    "static/media/App.css": "/static/media/background-home-tablet.0ee1872a.jpg",
+    "static/media/Header.css": "/static/media/icon-hamburger.35f8fd48.svg",
+    "static/media/logo.svg": "/static/media/logo.4b599304.svg"
+  }
+}

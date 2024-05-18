@@ -51,10 +51,10 @@ h2, h3 {
 }
 
 
-.planetList li:active {
+/* .planetList li:active {
     padding-bottom: calc(1rem - 2.5px);
     border-bottom: 2.5px solid #fff;
-}
+} */
 
 .planetList button {
     cursor: pointer;
@@ -62,7 +62,15 @@ h2, h3 {
     border: none;
     font: inherit;
     color: inherit;
+    letter-spacing: 2.7px;
     padding: 0;
+}
+
+.planetList button.selected {
+    color: #fff;
+    padding-bottom: calc(1rem - 2.5px);
+    border-bottom: 2.5px solid #fff;
+
 }
 
 .details h3 {
@@ -158,7 +166,7 @@ h2, h3 {
         .planetImg {
             width: 445px;
             height: 445px;
-            margin: 6rem 0 3rem 3rem;
+            margin: 6rem 0 3rem 9rem;
         }
 
         .details h3 {
@@ -175,6 +183,7 @@ h2, h3 {
             padding-inline: 0 6px;
             font-size: 18px;
             line-height: 32px;
+            height: 177px;
         }
 
         .metrics {

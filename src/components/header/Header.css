@@ -32,17 +32,17 @@
 }
 
 @supports (backdrop-filter: blur(1.5rem)) {
-        .nav-list {
-            backdrop-filter: blur(1.5rem);
-            background-color: hsla(0, 0%, 0%, 0);
-        }
+    .nav-list {
+        backdrop-filter: blur(1.5rem);
+        background-color: hsla(0, 0%, 0%, 0);
     }
+}
 
-    .nav-list span {
+.nav-list span {
         font-weight: 700;
-    }
+}
 
-    .visible {
+.visible {
         transform: translate(0%);
         display: flex;
   

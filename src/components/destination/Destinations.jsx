@@ -13,13 +13,20 @@ const Destinations = () => {
   const [planetSelected, setPlanetSelected] = useState(initialPlanet);
   console.log(planetSelected);
 
-  const changePlanet = (event) => {
+  const changePlanetData = (event) => {
     event.preventDefault();
-    const buttonClicked = event.currentTarget.id; // get the id of the button clicked which correspond to the index in the json data
-    console.log(Number(buttonClicked));
-    setPlanetSelected(planetsData[Number(buttonClicked)]); // convert the id into a number and get the corresponding planet Data
-    console.log(planetSelected.images.webp);
-  }
+    const buttonClicked = event.currentTarget;
+    const buttons = document.querySelectorAll(".planetList button");
+    console.log(buttons);
+
+    // convert the id into a number and get the corresponding planet Data
+    setPlanetSelected(planetsData[Number(buttonClicked.id)]) 
+    console.log(planetSelected.name);
+    console.log(buttonClicked.textContent);
+
+    // Add the "selected" class only on the selected button 
+    buttons.forEach((btn) => btn == buttonClicked ? btn.className = "selected" : btn.className = "");
+    }
 
   return (
     <div className="destination flex ff-barlow">
@@ -33,16 +40,16 @@ const Destinations = () => {
         <nav>
           <ul className="planetList flex">
             <li>
-              <button id="0" onClick={changePlanet}>{planetsData[0].name}</button>
+              <button id="0" className="selected" onClick={changePlanetData}>{planetsData[0].name}</button>
             </li>
             <li>
-              <button id="1" onClick={changePlanet}>{planetsData[1].name}</button>
+              <button id="1" onClick={changePlanetData}>{planetsData[1].name}</button>
             </li>
             <li>
-              <button id="2" onClick={changePlanet}>{planetsData[2].name}</button>
+              <button id="2"  onClick={changePlanetData}>{planetsData[2].name}</button>
             </li>
             <li>
-              <button id="3" onClick={changePlanet}>{planetsData[3].name}</button>
+              <button id="3" onClick={changePlanetData}>{planetsData[3].name}</button>
             </li>
           </ul>  
         </nav>
