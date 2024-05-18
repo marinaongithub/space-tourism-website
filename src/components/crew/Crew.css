@@ -1,0 +1,61 @@
+.crew {
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 2rem;
+}
+
+.crew h2 {
+    letter-spacing: 2.7px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-block: 1.5rem;
+}
+
+.crew h2 span {
+    font-weight: bold;
+    color: hsl(0, 0%, 33%);
+}
+
+.crewImg {
+    display: block;
+    border-bottom: solid 1px hsla(0, 0%, 59%, 0.5);
+    padding-inline: 5rem;
+    width: 327px;
+    height: 223px;
+}
+
+.crew button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #727272;
+    margin-top: 21px;
+}
+
+.crew button.selected {
+    background-color: #fff;
+}
+
+.role {
+    color:#727272;
+    margin-block: 5px;
+
+}
+
+.crewName {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.bio {
+    font-size: 15px;
+    line-height: 25px;
+    color: #D0D6F9;
+    letter-spacing: 1px;
+}
+
+.crewList {
+    padding: 0;
+    justify-content: center;
+    gap: 1rem;
+}

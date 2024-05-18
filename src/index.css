@@ -42,3 +42,15 @@ body {
   color: #fff;
 }
 
+button, li {
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+}

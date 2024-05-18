@@ -1,14 +1,12 @@
 import React from 'react'
-import './destinations.css'
+import './Destinations.css'
 import jsonData from '../../../data.json'
-import { useState } from 'react';
+import { useState } from 'react'
 
 const Destinations = () => {
 
   const planetsData = jsonData.destinations;
-  console.log(planetsData);
   const initialPlanet = planetsData[0];
-  console.log(initialPlanet)
 
   const [planetSelected, setPlanetSelected] = useState(initialPlanet);
   console.log(planetSelected);
@@ -32,11 +30,11 @@ const Destinations = () => {
     <div className="destination flex ff-barlow">
       <section className="planet flex">
         <h2><span>01&nbsp;&nbsp;&nbsp;</span>PICK YOUR DESTINATION</h2>
-        <figure>
+        <picture>
           <img className="planetImg" src={planetSelected.images.webp} alt={planetSelected.name} width="445" height="445" ></img>
-        </figure> 
+        </picture> 
       </section>   
-      <section className="details flex">
+      <section className="planetDetails flex">
         <nav>
           <ul className="planetList flex">
             <li>

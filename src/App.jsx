@@ -3,6 +3,7 @@ import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } 
 import Home from './pages/home/Home';
 import Destinations from './components/destination/Destinations';
 import MainLayout from './layouts/MainLayout';
+import Crew from './components/crew/Crew';
 
 function App() {
 
@@ -11,19 +12,14 @@ function App() {
     <Route path='/' element={ <MainLayout/> }>
       <Route index element={ <Home/>}/>
       <Route path="/destination" element={ <Destinations/>}/>
-      {/* <Route path="/crew" element={ <div><Crew/></div>}/>
-      <Route path="/technology" element={ <div><Crew/></div>}/> */}
+      <Route path="/crew" element={ <Crew/> }/>
+      {/* <Route path="/technology" element={ <div><Technology/></div>}/> */}
     </Route>
     )
   )
 
   return <RouterProvider className="flex" router={ router }/>
-  
-    // <div className="App flex">
-    //   <Header/>
-    //   {/* <Home/> */}
-    //   <Destinations/>
-    // </div>
+
 };
 
 export default App;

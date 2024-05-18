@@ -32,7 +32,7 @@ h2, h3 {
     height: 170px;
 }
 
-.details {
+.planetDetails {
     flex-direction: column;
 }
 
@@ -40,7 +40,6 @@ h2, h3 {
     padding: 0 0 2rem 0;
     margin-block: 0;
     justify-content: center;
-    list-style: none;
     gap: 1rem;
     font-size: 14px;
     letter-spacing: 2.36px;
@@ -50,16 +49,9 @@ h2, h3 {
     padding-bottom: 1rem;
 }
 
-
-/* .planetList li:active {
-    padding-bottom: calc(1rem - 2.5px);
-    border-bottom: 2.5px solid #fff;
-} */
-
 .planetList button {
     cursor: pointer;
     background: none;
-    border: none;
     font: inherit;
     color: inherit;
     letter-spacing: 2.7px;
@@ -73,7 +65,7 @@ h2, h3 {
 
 }
 
-.details h3 {
+.planetDetails h3 {
     font-size: 3.5rem;
     font-weight: 400;
     color: #fff;
@@ -131,7 +123,7 @@ h2, h3 {
         gap: 2rem;
     }
 
-    .details h3 {
+    .planetDetails h3 {
         font-size: 5rem;
     }
 
@@ -169,11 +161,11 @@ h2, h3 {
             margin: 6rem 0 3rem 9rem;
         }
 
-        .details h3 {
+        .planetDetails h3 {
             font-size: 6.25rem;
         }
 
-        .details {
+        .planetDetails {
             align-items: flex-start;
             width: 444px;
             margin-left: 8rem;
