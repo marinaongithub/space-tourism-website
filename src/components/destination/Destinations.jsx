@@ -1,5 +1,5 @@
 import React from 'react'
-import './Destinations.css'
+import './destinations.css'
 import jsonData from '../../../data.json'
 import { useState } from 'react'
 
