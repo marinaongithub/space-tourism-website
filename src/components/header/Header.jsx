@@ -20,16 +20,16 @@ function Header() {
         <nav>
             <ul id="nav-list" className={`nav-list flex ff-barlow ${isNavVisible ? 'visible' : ''}`}>
                 <li>
-                    <NavLink exact id="home" to="/" end ><span>00 &nbsp;</span> HOME</NavLink>
+                    <NavLink exact id="home" to="/" end onClick={toggleMenu}><span>00 &nbsp;</span> HOME</NavLink>
                 </li>
                 <li>
-                    <NavLink exact id="destination" to="/destination" ><span>01 &nbsp;</span> DESTINATION</NavLink>
+                    <NavLink exact id="destination" to="/destination" onClick={toggleMenu}><span>01 &nbsp;</span> DESTINATION</NavLink>
                 </li>
                 <li>
-                    <NavLink exact id="crew" to="/crew" ><span>02 &nbsp;</span> CREW</NavLink>
+                    <NavLink exact id="crew" to="/crew" onClick={toggleMenu}><span>02 &nbsp;</span> CREW</NavLink>
                 </li>
                 <li>
-                    <NavLink exact id="technology" to="/technology" ><span>03 &nbsp;</span> TECHNOLOGY</NavLink>
+                    <NavLink exact id="technology" to="/technology" onClick={toggleMenu}><span>03 &nbsp;</span> TECHNOLOGY</NavLink>
                 </li>
             </ul>
         </nav>
