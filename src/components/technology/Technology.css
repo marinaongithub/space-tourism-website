@@ -1,0 +1,198 @@
+.techPage {
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.techInfo {
+    flex-direction: column;
+}
+
+.tech {
+    flex-direction: column;
+}
+
+.techPage h2 {
+    letter-spacing: 2.7px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-block: 1.5rem;
+}
+
+.techPage h2 span {
+    font-weight: bold;
+    color: hsl(0, 0%, 33%);
+}
+
+.techImg {
+    display: block;
+    width: 100%;
+    height: 170px;
+}
+
+.tech button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 1px #727272;
+    background-color: #000;
+    margin-top: 21px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.tech button:hover {
+    cursor: pointer;
+}
+
+.tech button.selected {
+    background-color: #fff;
+    color: #000;
+}
+
+.terminology {
+    font-size: 14px;
+    color:#D0D6F9;
+    margin-block: 10gitpx;
+    letter-spacing: 2.36px;
+}
+
+.techName {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #fff;
+}
+
+.techDescription {
+    font-size: 15px;
+    line-height: 25px;
+    color: #D0D6F9;
+    padding-inline: 59px;
+    letter-spacing: 1px;
+}
+
+.techList {
+    padding: 0;
+    justify-content: center;
+    gap: 1rem;
+    margin-block: 1.5rem;
+}
+
+@media only screen and (min-width: 650px) {
+
+    .crewPage h2 {
+        text-align: left;
+        letter-spacing: 3.38px;
+        font-size: 1.25rem;
+        padding-inline: 2rem;
+        margin-block: 2rem;
+    }
+
+    .crew {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 9.25rem;
+    }
+
+    .info {
+        flex-direction: column-reverse;
+    }
+
+    .role {
+        font-size: 1.5rem;
+    }
+
+    .crewName {
+        font-size: 2.5rem;
+    }
+
+    .crewList {
+        margin-bottom: 1rem;
+    }
+
+    .bio {
+        line-height: 28px;
+        margin-top: 1rem;
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+
+    .crewImg {
+        width: 457px;
+        height: 533px;
+        padding-inline: 0rem;
+    }
+
+    .crew button {
+        margin-bottom: 2rem;
+    }
+
+    .main {
+        padding-inline: 2rem;
+    }
+
+}
+
+@media only screen and (min-width: 1270px) {
+    .crew {
+        flex-direction: row-reverse;
+    } 
+
+    .main {
+        flex-direction: column;
+    }
+
+    .crewPage {
+        padding-inline: 7rem 4rem;
+        padding-top: 3rem;
+    }
+
+    .crewPage h2 {
+        font-size: 28px;
+    }
+
+    .crew {
+        padding: 0;
+    }
+
+    .info {
+        text-align: left;
+        align-items: flex-start;
+        padding-left: 2rem;
+        margin-top: 2rem;
+        width: 50%;
+    }
+
+    .role {
+        font-size: 2rem;
+    }
+
+    .crewName {
+        font-size: 3.5rem;
+    }
+
+    .bio {
+        font-size: 1.5rem;
+        line-height: 32px;
+        padding-right: 13rem;
+        margin-block: 2rem 0;
+        height: 160px;
+    }
+
+    .crewList button {
+        width: 15px;
+        height: 15px;
+        margin-top: 4rem;
+    }
+
+    .crewPage picture {
+        margin-top: auto;
+    }
+
+    .crewImg {
+        width: 100%;
+        height: auto;
+        max-height: 620px;
+    }
+}

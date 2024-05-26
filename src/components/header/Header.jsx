@@ -16,7 +16,8 @@ function Header() {
         <img src={logo} alt="logo" width="40" height="40"/>
         <div className="line"></div>
         <button className={`mobile-nav-toggle ${isNavVisible ? 'close-icon' : ''}`} onClick={toggleMenu} aria-controls="nav-list">
-            <span className="sr-only" aria-expanded={isNavVisible}>Menu</span></button>    
+            <span className="sr-only" aria-expanded={isNavVisible}>Menu</span>
+        </button>    
         <nav>
             <ul id="nav-list" className={`nav-list flex ff-barlow ${isNavVisible ? 'visible' : ''}`}>
                 <li>

@@ -2,22 +2,73 @@
   text-align: center;
   display: flex;
   min-height: 100dvh;
-  background: url('./assets/home/background-home-mobile.jpg') #000 no-repeat center;
-  background-size: cover;
   overflow-x: hidden;
   flex-direction: column;
 }
 
+.homeBg {
+  background: url('./assets/home/background-home-mobile.jpg') #000 no-repeat center;
+  background-size: cover;
+}
+
+.destinationBg {
+  background: url('./assets/destination/background-destination-mobile.jpg') #000 no-repeat center;
+  background-size: cover;
+}
+
+.crewBg {
+  background: url('./assets/crew/background-crew-mobile.jpg') #000 no-repeat center;
+  background-size: cover;
+}
+
+.technologyBg {
+  background: url('./assets/technology/background-technology-mobile.jpg') #000 no-repeat center;
+  background-size: cover;
+}
+
+
 @media only screen and (min-width: 650px) {
-  .mainLayout {
+  .homeBg {
     background: url('./assets/home/background-home-tablet.jpg') #000 no-repeat center;
     background-size: cover;
   }
+  
+  .destinationBg {
+    background: url('./assets/destination/background-destination-tablet.jpg') #000 no-repeat center;
+    background-size: cover;
+  }
+  
+  .crewBg {
+    background: url('./assets/crew/background-crew-tablet.jpg') #000 no-repeat center;
+    background-size: cover;
+  }
+  
+  .technologyBg {
+    background: url('./assets/technology/background-technology-tablet.jpg') #000 no-repeat center;
+    background-size: cover;
+  }
+
+  
 }
 
 @media only screen and (min-width: 1024px) {
-  .mainLayout {
+  .homeBg {
     background: url('./assets/home/background-home-desktop.jpg') #000 no-repeat center;
+    background-size: cover;
+  }
+  
+  .destinationBg {
+    background: url('./assets/destination/background-destination-desktop.jpg') #000 no-repeat center;
+    background-size: cover;
+  }
+  
+  .crewBg {
+    background: url('./assets/crew/background-crew-desktop.jpg') #000 no-repeat center;
+    background-size: cover;
+  }
+  
+  .technologyBg {
+    background: url('./assets/technology/background-technology-desktop.jpg') #000 no-repeat center;
     background-size: cover;
   }
 }

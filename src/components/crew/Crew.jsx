@@ -46,8 +46,8 @@ const Crew = () => {
                     </li>
                 </ul>
                 <div>
-                    <p className="role bellefair">{crewMemberSelected.role}</p>
-                    <p className="crewName bellefair">{crewMemberSelected.name}</p>
+                    <p className="role ff-bellefair">{crewMemberSelected.role}</p>
+                    <p className="crewName ff-bellefair">{crewMemberSelected.name}</p>
                     <p className="bio">{crewMemberSelected.bio}</p>
                 </div>
             </section>
