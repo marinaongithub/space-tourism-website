@@ -40,6 +40,12 @@
     letter-spacing: 1.25px;
     font-size: 20px;
     background-color: #fff;
+    text-align: center;
+}
+
+.exploreLink {
+    text-decoration: none;
+    color: #000;
 }
 
 @media only screen and (min-width: 650px) {
@@ -74,10 +80,10 @@
 @media only screen and (min-width: 1024px) {
 
     .main {
-        flex-direction: row;
+        flex-direction: row !important;
         align-items: flex-end;
         justify-content: space-between;
-        padding: 0 10rem 8rem 10rem;
+        padding: 0 10rem 8rem 10rem !important;
     }
 
     .description {

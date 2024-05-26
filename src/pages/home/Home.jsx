@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import './home.css'
 
 function Home() {
@@ -11,7 +12,9 @@ function Home() {
           because we’ll give you a truly out of this world experience!</p>
       </section>
       <button className="explore ff-bellefair">
-        EXPLORE
+        <NavLink exact id="destination" to="/destination" end className="exploreLink">
+          EXPLORE
+        </NavLink>
       </button>
     </div>
   )
