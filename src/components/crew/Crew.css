@@ -3,6 +3,10 @@
     flex-grow: 1;
 }
 
+.info {
+    flex-direction: column;
+}
+
 .crew {
     flex-direction: column;
     padding-inline: 2rem;
@@ -25,7 +29,7 @@
 .crewImg {
     display: block;
     border-bottom: solid 1px hsla(0, 0%, 59%, 0.5);
-    padding-inline: 5rem;
+    padding-inline: 4rem;
     width: 327px;
     height: 223px;
 }
@@ -36,6 +40,11 @@
     border-radius: 50%;
     background-color: #727272;
     margin-top: 21px;
+}
+
+.crew button:hover {
+    cursor: pointer;
+
 }
 
 .crew button.selected {
@@ -78,8 +87,13 @@
 
     .crew {
         flex-direction: column-reverse;
+        justify-content: space-between;
         align-items: center;
-        padding-inline: 11.25rem;
+        padding-inline: 9.25rem;
+    }
+
+    .info {
+        flex-direction: column-reverse;
     }
 
     .role {
@@ -90,14 +104,21 @@
         font-size: 2.5rem;
     }
 
+    .crewList {
+        margin-bottom: 1rem;
+    }
+
     .bio {
         line-height: 28px;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
+        font-size: 1rem;
+        letter-spacing: 0;
     }
 
     .crewImg {
         width: 457px;
         height: 533px;
+        padding-inline: 0rem;
     }
 
     .crew button {
@@ -106,6 +127,70 @@
 
     .main {
         padding-inline: 2rem;
+    }
+
+}
+
+@media only screen and (min-width: 1270px) {
+    .crew {
+        flex-direction: row-reverse;
+    } 
+
+    .main {
+        flex-direction: column;
+    }
+
+    .crewPage {
+        padding-inline: 7rem 4rem;
+        padding-top: 3rem;
+    }
+
+    .crewPage h2 {
+        font-size: 28px;
+    }
+
+    .crew {
+        padding: 0;
+    }
+
+    .info {
+        text-align: left;
+        align-items: flex-start;
+        padding-left: 2rem;
+        margin-top: 2rem;
+        width: 50%;
+    }
+
+    .role {
+        font-size: 2rem;
+    }
+
+    .crewName {
+        font-size: 3.5rem;
+    }
+
+    .bio {
+        font-size: 1.5rem;
+        line-height: 32px;
+        padding-right: 13rem;
+        margin-block: 2rem 0;
+        height: 160px;
+    }
+
+    .crewList button {
+        width: 15px;
+        height: 15px;
+        margin-top: 4rem;
+    }
+
+    .crewPage picture {
+        margin-top: auto;
+    }
+
+    .crewImg {
+        width: 100%;
+        height: auto;
+        max-height: 620px;
     }
 
 }

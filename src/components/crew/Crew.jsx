@@ -30,24 +30,26 @@ const Crew = () => {
             <picture>
                 <img className="crewImg" src={crewMemberSelected.images.webp} alt="Crew member" width="327" height="223"/>
             </picture>
-            <ul className="crewList flex">
-                <li>
-                    <button id="0" className="selected" onClick={changeCrewData}></button>
-                </li>
-                <li>
-                    <button id="1" onClick={changeCrewData}></button>
-                </li>
-                <li>
-                    <button id="2" onClick={changeCrewData}></button>
-                </li>
-                <li>
-                    <button id="3" onClick={changeCrewData}></button>
-                </li>
-            </ul>
-            <section>
-                <p className="role bellefair">{crewMemberSelected.role}</p>
-                <p className="crewName bellefair">{crewMemberSelected.name}</p>
-                <p className="bio">{crewMemberSelected.bio}</p>
+            <section className="info flex">
+                <ul className="crewList flex">
+                    <li>
+                        <button id="0" className="selected" onClick={changeCrewData}></button>
+                    </li>
+                    <li>
+                        <button id="1" onClick={changeCrewData}></button>
+                    </li>
+                    <li>
+                        <button id="2" onClick={changeCrewData}></button>
+                    </li>
+                    <li>
+                        <button id="3" onClick={changeCrewData}></button>
+                    </li>
+                </ul>
+                <div>
+                    <p className="role bellefair">{crewMemberSelected.role}</p>
+                    <p className="crewName bellefair">{crewMemberSelected.name}</p>
+                    <p className="bio">{crewMemberSelected.bio}</p>
+                </div>
             </section>
         </main>
     </div>
