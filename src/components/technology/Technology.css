@@ -53,7 +53,7 @@
 .terminology {
     font-size: 14px;
     color:#D0D6F9;
-    margin-block: 10gitpx;
+    margin-block: 10px;
     letter-spacing: 2.36px;
 }
 
@@ -80,7 +80,7 @@
 
 @media only screen and (min-width: 650px) {
 
-    .crewPage h2 {
+    .techPage h2 {
         text-align: left;
         letter-spacing: 3.38px;
         font-size: 1.25rem;
@@ -88,48 +88,38 @@
         margin-block: 2rem;
     }
 
-    .crew {
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        align-items: center;
-        padding-inline: 9.25rem;
+    .terminology {
+        font-size: 1rem;
+        letter-spacing: 2.7px;
+        margin-block: 1rem;
     }
 
-    .info {
-        flex-direction: column-reverse;
-    }
-
-    .role {
-        font-size: 1.5rem;
-    }
-
-    .crewName {
+    .techName {
         font-size: 2.5rem;
     }
 
-    .crewList {
-        margin-bottom: 1rem;
-    }
-
-    .bio {
-        line-height: 28px;
-        margin-top: 1rem;
-        font-size: 1rem;
-        letter-spacing: 0;
-    }
-
-    .crewImg {
-        width: 457px;
-        height: 533px;
-        padding-inline: 0rem;
-    }
-
-    .crew button {
+    .techList {
         margin-bottom: 2rem;
     }
 
-    .main {
-        padding-inline: 2rem;
+    .techDescription {
+        line-height: 28px;
+        font-size: 1rem;
+        letter-spacing: 0;
+        margin-top: 2rem;
+        padding-inline: 208px;
+    }
+
+    .techImg {
+        height: 310px;
+        margin-top: 2rem;
+    }
+
+    .tech button {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
     }
 
 }
