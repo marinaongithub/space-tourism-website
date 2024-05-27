@@ -125,64 +125,63 @@
 }
 
 @media only screen and (min-width: 1270px) {
-    .crew {
+
+    .techPage {
+        padding: 5em 0 e5m 6.75em;
+    }
+
+    .tech {
         flex-direction: row-reverse;
+        gap: 5em;
+        align-items: center;
     } 
 
-    .main {
-        flex-direction: column;
-    }
-
-    .crewPage {
-        padding-inline: 7rem 4rem;
-        padding-top: 3rem;
-    }
-
-    .crewPage h2 {
+    .techPage h2 {
         font-size: 28px;
+        margin: 0;
     }
 
-    .crew {
-        padding: 0;
-    }
-
-    .info {
-        text-align: left;
-        align-items: flex-start;
-        padding-left: 2rem;
-        margin-top: 2rem;
-        width: 50%;
-    }
-
-    .role {
+    .tech button {
         font-size: 2rem;
     }
 
-    .crewName {
-        font-size: 3.5rem;
+    .techInfo {
+        flex-direction: row;
+        text-align: left;
+        gap: 5em;
+        padding-top: 2em;
+        width: 55%;
     }
 
-    .bio {
-        font-size: 1.5rem;
+    .techName {
+        font-size: 3.5rem;
+        letter-spacing: 0;
+    }
+
+    .techDescription {
+        font-size: 1.125rem;
         line-height: 32px;
-        padding-right: 13rem;
-        margin-block: 2rem 0;
+        padding-inline: 0 6em;
+        letter-spacing: 1.5px;
         height: 160px;
     }
 
-    .crewList button {
-        width: 15px;
-        height: 15px;
-        margin-top: 4rem;
+    .techList {
+        flex-direction: column;
+        padding-left: 1em;
+        justify-content: flex-start;
+        margin-block: 0;
     }
 
-    .crewPage picture {
-        margin-top: auto;
+    .techList button {
+        width: 80px;
+        height: 80px;
+        justify-content: flex-start;
     }
 
-    .crewImg {
+    .techImg {
         width: 100%;
         height: auto;
-        max-height: 620px;
+        max-width: 515px;
     }
 }
