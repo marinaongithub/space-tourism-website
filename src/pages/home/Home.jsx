@@ -11,11 +11,11 @@ function Home() {
           outer space and not hover kind of on the edge of it. Well sit back, and relax 
           because we’ll give you a truly out of this world experience!</p>
       </section>
-      <button className="explore ff-bellefair">
         <NavLink exact id="destination" to="/destination" end className="exploreLink">
-          EXPLORE
+          <button className="explore ff-bellefair">
+            EXPLORE
+            </button>  
         </NavLink>
-      </button>
     </div>
   )
 }

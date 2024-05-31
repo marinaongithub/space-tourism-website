@@ -28,9 +28,9 @@ const Technology = () => {
         <h2><span>03&nbsp;&nbsp;&nbsp;</span>SPACE LAUNCH 101</h2>
         <main className="tech flex">
             <picture>
-                {/* Specify the image for desktop view */}
+                {/* Image for desktop view */}
                 <source media="(min-width: 1270px)" srcSet={techSelected.images.portrait} />
-                {/* Specify the image for mobile and tabletview */}
+                {/* Image for mobile and tabletview */}
                 <img className="techImg" src={techSelected.images.landscape} alt="Space Technology" />
             </picture>
             <section className="techInfo flex">
