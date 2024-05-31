@@ -24,7 +24,7 @@ function Header() {
                     <NavLink exact id="home" to="/" end onClick={toggleMenu}><span>00 &nbsp;</span> HOME</NavLink>
                 </li>
                 <li>
-                    <NavLink exact id="destination" to="/destination" onClick={toggleMenu}><span>01 &nbsp;</span> DESTINATION</NavLink>
+                    <NavLink exact id="destinations" to="/destination" onClick={toggleMenu}><span>01 &nbsp;</span> DESTINATION</NavLink>
                 </li>
                 <li>
                     <NavLink exact id="crew" to="/crew" onClick={toggleMenu}><span>02 &nbsp;</span> CREW</NavLink>
